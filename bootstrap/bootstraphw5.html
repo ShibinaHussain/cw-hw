@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>SkyWay Travels</title>
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <style>
+    /* Custom tweaks since Bootstrap 4 doesn't cover everything */
+    .navbar-custom {
+      background-color: #0d9488 !important;
+    }
+    .nav-link.disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .sidebar {
+      min-height: calc(100vh - 56px);
+      background: #ffffff;
+      border-right: 1px solid #dee2e6;
+    }
+    .sidebar .nav-link {
+      color: #334155;
+      border-radius: 0.25rem;
+    }
+    .sidebar .nav-link:hover {
+      background: #f1f5f9;
+      color: #0d9488;
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  <!-- Navbar -->
+   <nav class="navbar navbar-expand navbar-dark navbar-custom">
+    <div class="container-fluid justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Destinations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Bookings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+   <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+       <div class="col-md-2 px-0">
+        <div class="sidebar py-3">
+          <ul class="nav flex-column px-3">
+            <li class="nav-item mb-1">
+              <a class="nav-link" href="#">Offers</a>
+            </li>
+            <li class="nav-item mb-1">
+              <a class="nav-link" href="#">Packages</a>
+            </li>
+            <li class="nav-item mb-1">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item mb-1">
+              <a class="nav-link" href="#">Support</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Main content -->
+       <div class="col-md-10 py-4 px-4"> 
+         <!-- Navigation pills for filters -->
+         <ul class="nav nav-pills mb-4">
+          <li class="nav-item mr-2 mb-2">
+            <a class="nav-link border border-info text-info" href="#">Beach</a>
+          </li>
+          <li class="nav-item mr-2 mb-2">
+            <a class="nav-link border border-info text-info" href="#">Mountain</a>
+          </li>
+          <li class="nav-item mr-2 mb-2">
+            <a class="nav-link border border-info text-info" href="#">City</a>
+          </li>
+          <li class="nav-item mr-2 mb-2">
+            <a class="nav-link border border-info text-info" href="#">Adventure</a>
+          </li>
+        </ul>
+
+        <!-- Hero section -->
+        <div class="bg-white p-5 rounded shadow-sm">
+          <h1 class="h2 mb-2 text-dark">Welcome to SkyWay Travels</h1>
+          <p class="text-muted mb-0">Discover your next destination with us. From beaches to mountains, we’ve got your trip covered.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 4 JS dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
