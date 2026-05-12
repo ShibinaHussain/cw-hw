@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <p id="bookobj"></p>
 </head>
 <body>
-    
+  <script>
+const book = {
+  title: "The Alchemist",
+  author: "Paulo Coelho", 
+  year: 1988,
+
+  getSummary: function() {
+    return "The book '" + this.title + "' was written by " + this.author + " in " + this.year + ".";
+  }
+};
+
+function printBookSummary(bookobj) {
+  console.log(bookobj.getSummary());
+printBookSummary(book);
+</script>
 </body>
 </html>
