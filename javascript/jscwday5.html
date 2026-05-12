@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>  
+const order = {
+  itemName: "Wireless Headphones",
+  isDelivered: true,
+  daysSinceDelivery: 5
+};
+function handleReturnClick() {
+  
+
+  const returnStatus = (order.isDelivered && order.daysSinceDelivery <= 7) 
+    ? "Eligible for Return" 
+    : "Return Period Expired";
+  
+  console.log(returnStatus);
+  
+  // 4. Check if itemName property exists
+  const hasItemName = "itemName" in order;
+  console.log("Does itemName exist?", hasItemName); // true
+  
+  // 5. Remove daysSinceDelivery property using delete operator
+  delete order.daysSinceDelivery;
+  console.log("Order after deletion:", order);
+}
+
+// Simulate button click
+handleReturnClick();
+</script> 
+</body>
+</html>
