@@ -6,6 +6,53 @@
     <title>Document</title>
 </head>
 <body>
-    
+<script>
+const correctNumber = 3;
+const maxChances = 5;
+
+for (let chance = 1; chance <= maxChances; chance++) {
+  let input = prompt(`Chance ${chance}/${maxChances}: Enter a number between 1 and 5`);
+  let guess = Number(input); 
+  let numberInWords;
+  switch (guess) {
+    case 1:
+      numberInWords = "One";
+      break;
+    case 2:
+      numberInWords = "Two";
+      break;
+    case 3:
+      numberInWords = "Three";
+      break;
+    case 4:
+      numberInWords = "Four";
+      break;
+    case 5:
+      numberInWords = "Five";
+      break;
+    default:
+      numberInWords = "Not a valid number";
+  }
+
+  console.log(`You entered: ${numberInWords}`);
+
+  if (guess < 1 || guess > 5 || isNaN(guess)) {
+    console.log("Invalid input");
+    continue;
+  }
+
+  if (guess === correctNumber) {
+    console.log("You guessed it right!");
+    break; 
+  } else {
+   
+    console.log("Wrong guess. Try again.");
+  }
+
+  if (chance === maxChances) {
+    console.log("Game over");
+  }
+}
+</script>
 </body>
 </html>
