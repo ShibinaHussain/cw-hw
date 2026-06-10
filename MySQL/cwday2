@@ -1,0 +1,21 @@
+INSERT INTO students (id, name, age, department, grade) VALUES
+(1, 'Priya Sharma', 21, 'Computer Science', 88),
+(2, 'Arjun Mehta', 19, 'Physics', 92),
+(3, 'Kavya Reddy', 22, 'Computer Science', 90),
+(4, 'Rohit Verma', 20, 'Mechanical', 76);
+
+SELECT * 
+FROM students
+WHERE age > 20;
+
+SELECT * 
+FROM students
+WHERE department IN ('Computer Science', 'Physics');
+
+SELECT * 
+FROM students
+WHERE grade = 90;
+
+SELECT * 
+FROM students
+WHERE grade BETWEEN 70 AND 90;
